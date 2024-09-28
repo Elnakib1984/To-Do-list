@@ -9,3 +9,6 @@
 3 - checking the tasks 
 4 - database to track progress and analyze efficiency
 '''
+
+task = input("Type the Task: ")
+print(task)
