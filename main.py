@@ -25,3 +25,22 @@ if __name__ == "__main__" :
     print("2. Delete a task")
     print("3. List tasks")
     print("4. Quit")
+
+
+    choice = input("Enter your Choice: ")
+
+    if(choice == "1"):
+      addTask()
+    
+    elif(choice == "2"):
+      deleteTask()
+
+    elif(choice == "3"):
+      ListTasks()
+
+    elif(choice == "4"):
+      break
+
+    else :
+      print("Invalid input. Please try again.")
+    
