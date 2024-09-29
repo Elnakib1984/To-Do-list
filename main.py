@@ -10,7 +10,12 @@
 4 - database to track progress and analyze efficiency
 '''
 '''creating array for tasks'''
-todo = [] 
+tasks = [] 
+def addTask():
+  task = input("Enter task: ")
+  tasks.append(task)
+  print("Task added.")
+  
 
 if __name__ == "__main__" :
   ### create a loop to run the app
@@ -43,4 +48,7 @@ if __name__ == "__main__" :
 
     else :
       print("Invalid input. Please try again.")
+
+  print("Goodbye")
+      
     
