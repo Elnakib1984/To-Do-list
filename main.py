@@ -16,18 +16,32 @@ def addTask():
   tasks.append(task)
   print(f"Task '{task}' added to the list .")
 
+
+def listTasks():
+  if not tasks:
+    print("There are no tasks currently.")
+  else:
+    print("Current tasks: ")
+    for index, task in enumerate(tasks):
+      print(f"Task #{index}. {task}")
+
 def deleteTask():
   listTasks()
 
   try:
-    int(input("Choose the # of the task you want to delete"))
+    taskToDelete = int(input("Enter the # to delete: "))
+    if taskToDelete >= 0 and taskToDelete < len(tasks):
+      tasks.pop(taskToDelete)
+      print(f"Task {taskToDelete} has been removed")
+    else :
+      print(f"Task #{taskToDelete} was not found")
 
   except:
     print("Invalid input.")
 
 
 
-def listTasks():
+
 
   
 
