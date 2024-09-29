@@ -69,7 +69,7 @@ if __name__ == "__main__" :
       deleteTask()
 
     elif(choice == "3"):
-      ListTasks()
+      listTasks()
 
     elif(choice == "4"):
       break
