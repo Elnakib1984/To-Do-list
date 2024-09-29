@@ -14,7 +14,21 @@ tasks = []
 def addTask():
   task = input("Enter task: ")
   tasks.append(task)
-  print("Task added.")
+  print(f"Task '{task}' added to the list .")
+
+def deleteTask():
+  listTasks()
+
+  try:
+    int(input("Choose the # of the task you want to delete"))
+
+  except:
+    print("Invalid input.")
+
+
+
+def listTasks():
+
   
 
 if __name__ == "__main__" :
