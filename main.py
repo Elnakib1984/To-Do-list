@@ -11,14 +11,14 @@
 '''
 '''creating array for tasks'''
 
-tasks = [] 
-def addTask():
+tasks = [] # 1 - writing the Array
+def addTask(): #Defining function for adding tasks
   task = input("Enter task: ")
   tasks.append(task)
   print(f"Task '{task}' added to the list .")
 
 
-def listTasks():
+def listTasks(): #Defining functon for adding tasks
   if not tasks:
     print("There are no tasks currently.")
   else:
@@ -26,8 +26,8 @@ def listTasks():
     for index, task in enumerate(tasks):
       print(f"Task #{index}. {task}")
 
-def deleteTask():
-  listTasks()
+def deleteTask(): #Defining function for adding tasks
+  listTasks() # Calling listTasks Function
 
   try:
     taskToDelete = int(input("Enter the # to delete: "))
