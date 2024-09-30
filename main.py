@@ -10,6 +10,7 @@
 4 - database to track progress and analyze efficiency
 '''
 '''creating array for tasks'''
+
 tasks = [] 
 def addTask():
   task = input("Enter task: ")
@@ -78,5 +79,3 @@ if __name__ == "__main__" :
       print("Invalid input. Please try again.")
 
   print("Goodbye")
-      
-    
